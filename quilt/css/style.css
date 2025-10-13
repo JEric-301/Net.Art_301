@@ -1,0 +1,104 @@
+* { 
+  margin: 0;  
+  box-sizing: border-box; 
+}
+
+.container1 {
+  width: 100%;
+  height: 33.33vh;
+  display: flex;
+}
+
+.row1col1 { background-color: rgb(0, 23, 126); flex: 9; }
+.row1col2 { background-color: rgb(20, 43, 142); flex: 6; }
+.row1col3 { background-color: rgb(36, 57, 152); flex: 4; }
+.row1col4 { background-color: rgb(71, 87, 159); flex: 2.67; }
+.row1col5 { background-color: rgb(88, 117, 191); flex: 1.78; }
+
+.container2 { 
+    width: 100%;
+    height: 33.34vh;
+    display: flex;
+}
+
+.row2col1 { background-color: rgb(154, 223, 177); flex: 1.78; }
+.row2col2 { background-color: rgb(99, 223, 105); flex: 2.67; }
+.row2col3 { background-color: rgb(48, 221, 68); flex: 4; }
+.row2col4 { background-color: rgb(0, 216, 14); flex: 6; }
+.row2col5 { background-color: rgb(4, 142, 31); flex: 7; }
+
+.container3 {
+    width: 100%;
+    height: 33.33vh;
+    display: flex;
+}
+
+.row3col1 { background-color: rgb(255, 112, 0); flex: 7.5; }
+.row3col2 { background-color: rgb(253, 127, 30); flex: 5; }
+.row3col3 { background-color: rgb(252, 131, 25); flex: 4; }
+.row3col4 { background-color: rgb(235, 141, 74); flex: 2.67; }
+.row3col5 { background-color: rgb(255, 174, 133); flex: 1.78; }
+
+
+
+
+
+
+.cornerbox {
+  position: absolute;     
+  bottom: 30px;
+  right: 30px;
+  display: grid;        
+  place-items: center;    
+  width: 80px;
+  height: 80px;
+}
+
+.box {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  opacity: 0.9
+}
+
+.black {
+  background-color: black;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+}
+
+.gray {
+  background-color: gray;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+}
+
+.white {
+  background-color: white;
+  z-index: 3;
+  width: 20px;
+  height: 20px;
+}
+
+.leftimg {
+    background-image: url('https://images.unsplash.com/photo-1700901555562-952f0008a11f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhdXRpZnVsJTIwc2t5fGVufDB8fDB8fHww&fm=jpg&q=60&w=3000'); 
+    background-size: cover;
+    background-position: center;
+    width: 60px;          
+    height: 60px;
+    position: absolute;    
+    bottom: 10px;              
+    right: 100px;          
+}
+
+.topimg {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfqK0rU4s3KqHSN5e6ctpNBmCEQOw-YW_pGg&s'); 
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 100px;         
+    right: 10px;             
+}
