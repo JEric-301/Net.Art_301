@@ -1,0 +1,88 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.sky {
+  background: linear-gradient(to bottom, #83d0ee, #e0f7ff);
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.sun {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  width: 120px;
+  height: 120px;
+  background-image: url("images/Sun.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: spin 40s linear infinite;
+}
+
+.cloud {
+  position: absolute;
+  width: 200px;
+  height: 120px;
+  background-image: url("images/Cloud.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  transition: transform 2s ease, opacity 2s ease;
+}
+
+.cloud1 { top: 300px; left: 1150px; }
+.cloud2 { top: 160px; left: 180px; }
+.cloud3 { top: 600px; left: 600px; }
+
+
+.big-bird, .small-bird {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0; 
+  transition: opacity 1s ease; 
+}
+
+.big-bird {
+  width: 70px;
+  height: 70px;
+  background-image: url("images/Eagle.png");
+  transform: rotate(0deg) translateX(200px) rotate(0deg);
+  animation: orbit-big 5s linear infinite paused; 
+}
+
+.small-bird {
+  width: 40px;
+  height: 40px;
+  background-image: url("images/smallbird.png");
+  transform: rotate(180deg) translateX(200px) rotate(-180deg);
+  animation: orbit-small 5s linear infinite paused;
+}
+
+.sky:hover .big-bird,
+.sky:hover .small-bird {
+  opacity: 1; 
+  animation-play-state: running; 
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes orbit-big {
+  0% { transform: rotate(0deg) translateX(200px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(200px) rotate(-360deg); }
+}
+
+@keyframes orbit-small {
+  0% { transform: rotate(90deg) translateX(200px) rotate(-90deg); }
+  100% { transform: rotate(450deg) translateX(200px) rotate(-450deg); }
+}
