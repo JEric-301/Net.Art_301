@@ -1,0 +1,91 @@
+body {
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  margin: 0;
+  overflow: hidden;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  font-size: 1.2em; 
+}
+
+h1, h2 {
+  font-family: 'Alegreya', serif;
+  font-style: italic;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.caption {
+  font-family: 'Alegreya', serif;
+  font-style: italic;
+  font-size: 1em;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  padding: 10px
+}
+
+.left p, .right p {
+  font-family: 'Alegreya', serif;  
+  font-style: normal;           
+  line-height: 1.6;
+  margin-bottom: 1.2em;
+}
+
+.left {
+  width: 30%; 
+  float: left;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
+.right {
+  width: 65%; 
+  float: right;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.right img {
+  width: 98%;       
+  max-width: none;  
+  display: block;
+  margin-bottom: 15px;
+  border: 2px solid #131313;
+}
+
+.right p.caption {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .left {
+    width: 60%;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+  }
+  .right {
+    width: 80%;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    height: auto;
+  }
+
+  .right img {
+    width: 100%; 
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .left, .right {
+    width: 100%;
+  }
+}
