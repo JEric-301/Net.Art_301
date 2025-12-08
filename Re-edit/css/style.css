@@ -1,0 +1,137 @@
+body {
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  overflow:hidden;
+  margin: 0;
+  background-color: #0e0d0d;
+  color: #ffffffd0;
+  letter-spacing: 0.5px;
+  font-size: 1.2em; 
+}
+
+h1, h4 {
+  font-family: 'Alegreya', serif;
+  font-style: italic;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.caption {
+  font-family: 'Alegreya', serif;
+  font-style: italic;
+  font-size: 1em;
+  color: #ffffffd0;
+  letter-spacing: 0.5px;
+  padding: 10px;
+  margin: 0;
+}
+
+.caption-header {
+  display: flex;
+  gap: 10px;
+  color: #ffffff;
+  align-items: baseline;
+  padding: 10px;
+  margin: 0;
+  font-size: 1.07em;
+}
+
+.caption-title {
+  font-style: normal;        
+  font-weight: bold;
+  font-size: 1.05em;        
+}
+
+.caption-meta {
+  font-style: normal;       
+  font-weight: 300;         
+  opacity: 0.8;            
+  font-size: 0.95em;
+}
+
+.bio {
+  font-size: 0.9em;
+  font-style: italic;
+  color: #d8c3a6;
+  margin-top: -10px;
+  display: none;
+  padding: 10px;
+}
+
+.bio-button {
+  font-size: 0.6em;
+  margin-left: 10px;
+  padding: 2px 6px;
+  cursor: pointer;
+  background-color: #333;
+  border: 1px solid #666;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.left p, .right p {
+  font-family: 'Alegreya', serif;  
+  font-style: normal;           
+  line-height: 1.6;
+  margin-bottom: 1.2em;
+}
+
+.left {
+  width: 30%; 
+  float: left;
+  padding-left: 30px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.right {
+  width: 67%; 
+  float: right;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.right img {
+  width: 98%;       
+  max-width: none;  
+  display: block;
+  margin-bottom: 15px;
+  border: 2px solid #131313;
+}
+
+.right p.caption {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .left {
+    width: 60%;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+  }
+  .right {
+    width: 80%;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    height: auto;
+  }
+
+  .right img {
+    width: 100%; 
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .left, .right {
+    width: 100%;
+  }
+}
