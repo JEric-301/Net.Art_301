@@ -1,0 +1,113 @@
+body {
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  margin: 0;
+  background-color: #0e0d0d;
+  color: #ffffffd0;
+  letter-spacing: 0.5px;
+  font-size: 1.2em;
+  overflow: hidden;
+}
+
+h1, h4 {
+  font-style: italic;
+  color: #ffffff;
+}
+
+.curator {
+  text-align: right;
+  margin-right: 5px;
+}
+
+.left {
+  width: 30%;
+  float: left;
+  padding-left: 35px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.right {
+  width: 68%;
+  float: right;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding-right: 35px;
+  padding-left: 30px;
+}
+
+.left p,
+.right p {
+  line-height: 1.6;
+  margin-bottom: 1.2em;
+}
+
+.right img {
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+  border: 2px solid #131313;
+  transition: box-shadow 0.3s ease;
+}
+
+.right a:hover img {
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.6);
+}
+
+.caption-header {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  justify-content: center;   
+  text-align: center;       
+  padding: 10px 0;
+}
+
+.caption-title {
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.caption-meta {
+  opacity: 0.8;
+  font-size: 0.95em;
+}
+
+.caption {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-style: italic;
+}
+
+.bio {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-style: italic;
+  opacity: 0.85;
+  color: #cdc3b5;
+}
+
+@media screen and (max-width: 992px) {
+  .left,
+  .right {
+    width: 90%;
+    float: none;
+    margin: 0 auto;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .left,
+  .right {
+    width: 100%;
+  }
+}
